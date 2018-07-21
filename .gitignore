@@ -58,3 +58,12 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+
+/src/main/resources/credentials.json
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/vcs.xml
+kkmail.iml
+src/main/resources/
+target/
