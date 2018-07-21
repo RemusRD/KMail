@@ -10,7 +10,6 @@ before_cache:
 
 before_install:
  - wget https://github.com/codacy/codacy-coverage-reporter/releases/download/4.0.1/codacy-coverage-reporter-4.0.1-assembly.jar
- - wget https://github.com/sormuras/bach/raw/master/install-jdk.sh F 10 -L BCL
 
 script:
   - mvn clean install
@@ -19,4 +18,6 @@ after_success:
   - java -jar codacy-coverage-reporter-4.0.1-assembly.jar report -l Java -r target/jacoco/it/jacoco.xml --partial
   - java -jar codacy-coverage-reporter-4.0.1-assembly.jar report -l Java -r target/jacoco/ut/jacoco.xml --partial
   - java -jar codacy-coverage-reporter-4.0.1-assembly.jar final
+jdk:
+  oraclejdk10
 
