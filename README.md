@@ -1,0 +1,2 @@
+# KMail
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ce7c33b25bc640c0baae3425b996e8ad)](https://app.codacy.com/app/RemusRD/KMail?utm_source=github.com&utm_medium=referral&utm_content=RemusRD/KMail&utm_campaign=badger)
