@@ -7,6 +7,18 @@
     <groupId>org.sik.kkmail</groupId>
     <artifactId>kkmail</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <jacoco.version>0.7.6.201602180812</jacoco.version>
+        <jacoco.outputDir>${project.build.directory}</jacoco.outputDir>
+
+        <jacoco.utreportpath>${project.build.directory}/jacoco/ut</jacoco.utreportpath>
+        <jacoco.utreportfile>${jacoco.utreportpath}/jacoco.exec</jacoco.utreportfile>
+
+        <jacoco.itreportpath>${project.build.directory}/jacoco/it</jacoco.itreportpath>
+        <jacoco.itreportfile>${jacoco.itreportpath}/jacoco-it.exec</jacoco.itreportfile>
+
+    </properties>
+
     <build>
         <plugins>
             <plugin>
