@@ -16,7 +16,7 @@
 
         <jacoco.itreportpath>${project.build.directory}/jacoco/it</jacoco.itreportpath>
         <jacoco.itreportfile>${jacoco.itreportpath}/jacoco-it.exec</jacoco.itreportfile>
-
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <build>
@@ -87,9 +87,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <argLine>${surefireArgLine}</argLine>
-                </configuration>
+                <version>2.22.0</version>
             </plugin>
 
             <plugin>
@@ -112,7 +110,6 @@
             </plugin>
         </plugins>
     </build>
-    <packaging>war</packaging>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
