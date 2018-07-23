@@ -29,10 +29,10 @@ public class SMTPService {
                             .map(e -> e.getEmailAddress().getAddress()).toArray(String[]::new);
 
         message.setBcc(bccRecipients);
-        String[] ccRecicipients =  messageToSend.getCcRecipients().stream()
+        String[] ccRecipients =  messageToSend.getCcRecipients().stream()
                 .map(e -> e.getEmailAddress().getAddress()).toArray(String[]::new);
 
-        message.setCc(ccRecicipients);
+        message.setCc(ccRecipients);
         message.setReplyTo(messageToSend.getReplyTo().getEmailAddress().getAddress());
         String[] toRecipients = messageToSend.getToRecipients().stream()
                         .map(e -> e.getEmailAddress().getAddress()).toArray(String[]::new);
